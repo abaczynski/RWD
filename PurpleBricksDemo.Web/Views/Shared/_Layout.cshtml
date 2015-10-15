@@ -16,7 +16,7 @@
             <div class="col-md-12">
                 
                 @if (User.Identity.IsAuthenticated) { 
-                    @{Html.RenderAction("NavigationMenu", "Menu", new { area = "" });}
+                    Html.RenderAction("NavigationMenu", "Menu", new { area = "" });
                     <a style="float:right;" href="@Url.Action("LogOut", "Account", new { area = ""})">Log Out</a> 
                 }
                
