@@ -52,7 +52,9 @@ namespace Core.Users
             if (string.IsNullOrEmpty(username)) throw new ArgumentNullException("username cannot be empty");
             if (string.IsNullOrEmpty(password)) throw new ArgumentNullException("password cannot be empty");
 
-            var user = _userRepository.Get(z => z.Username == username).SingleOrDefault();
+            var user = _userRepository.Get(z => z.Username == username).FirstOrDefault();
+            if (user == null) throw new ArgumentNullException("User not found");
+
             var isValid = _securityService.ValidateHash(password, new HashObject(user.PasswordHash, user.PasswordSalt));
 
             return isValid ? user : null;
