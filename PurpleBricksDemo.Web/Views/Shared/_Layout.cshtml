@@ -14,8 +14,9 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                @{Html.RenderAction("NavigationMenu", "Menu", new { area = "" });}
+                
                 @if (User.Identity.IsAuthenticated) { 
+                    @{Html.RenderAction("NavigationMenu", "Menu", new { area = "" });}
                     <a style="float:right;" href="@Url.Action("LogOut", "Account", new { area = ""})">Log Out</a> 
                 }
                
