@@ -29,7 +29,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core.Property", "Core.Prope
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure.Security", "Infrastructure.Security\Infrastructure.Security.csproj", "{BD3C54BC-D163-4507-BD3D-37D1F1A1A193}"
 EndProject
-Project("{CC5FD16D-436D-48AD-A40C-5A424C6E3E79}") = "PurpleBricksDemo.Web.Azure", "PurpleBricksDemo.Web.Azure\PurpleBricksDemo.Web.Azure.ccproj", "{6F0A80A0-C408-4B44-BE35-23B4BFD052CB}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{56097817-076F-43E1-8A1E-7EB91B49FE15}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -73,10 +78,6 @@ Global
 		{BD3C54BC-D163-4507-BD3D-37D1F1A1A193}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BD3C54BC-D163-4507-BD3D-37D1F1A1A193}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BD3C54BC-D163-4507-BD3D-37D1F1A1A193}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6F0A80A0-C408-4B44-BE35-23B4BFD052CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6F0A80A0-C408-4B44-BE35-23B4BFD052CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6F0A80A0-C408-4B44-BE35-23B4BFD052CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6F0A80A0-C408-4B44-BE35-23B4BFD052CB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
