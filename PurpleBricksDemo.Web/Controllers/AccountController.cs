@@ -10,6 +10,7 @@ using System.Web.Security;
 
 namespace PurpleBricksDemo.Web.Controllers
 {
+    [AllowAnonymous]
     public class AccountController : Controller
     {
         private readonly IAuthentication _authentication;
