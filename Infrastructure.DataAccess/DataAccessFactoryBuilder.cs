@@ -35,7 +35,7 @@ namespace Infrastructure.DataAccess
                 .BuildConfiguration();
 
             var exporter = new SchemaExport(config);
-            exporter.Execute(true, true, false);
+            //exporter.Execute(true, true, false);
 
             return config.BuildSessionFactory();
         }
