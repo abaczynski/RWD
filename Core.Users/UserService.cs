@@ -24,6 +24,8 @@ namespace Core.Users
             if (string.IsNullOrEmpty(userName)) throw new ArgumentNullException("username cannot be empty");
             if (string.IsNullOrEmpty(password)) throw new ArgumentNullException("password cannot be empty");
 
+            if (!UserNameIsFree(userName)) throw new ArgumentNullException("Username exist");
+
             var hash = _securityService.Compute(password);
                
             var newUser = new User();

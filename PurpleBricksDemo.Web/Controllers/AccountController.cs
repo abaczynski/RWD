@@ -34,13 +34,19 @@ namespace PurpleBricksDemo.Web.Controllers
         public ActionResult LogOn(LogOnViewModel logOnViewModel)
         {
             if (ModelState.IsValid)
+            
             {
-                if (Membership.ValidateUser(logOnViewModel.Username, logOnViewModel.Password))
+                try
                 {
-                    _authentication.Login(_sessionManager.CurrentSession.CurrentSystemUser.Id.ToString(), logOnViewModel.RememberMe);
-                    return RedirectToAction("Index", "Home");
+                    if (Membership.ValidateUser(logOnViewModel.Username, logOnViewModel.Password))
+                    {
+                        _authentication.Login(_sessionManager.CurrentSession.CurrentSystemUser.Id.ToString(), logOnViewModel.RememberMe);
+                        return RedirectToAction("Index", "Home");
+                    }
                 }
-                ModelState.AddModelError("", "The user name or password provided is incorrect.");
+                catch (ArgumentNullException e) {
+                    ModelState.AddModelError("", e.ParamName);
+                }
             }
             return View("LogOn", logOnViewModel);
         }
@@ -60,7 +66,7 @@ namespace PurpleBricksDemo.Web.Controllers
                     }
                 }
                 catch (ArgumentException e) {
-                    ModelState.AddModelError("", e.Message);
+                    ModelState.AddModelError("", e.ParamName);
                 }
                 
             }
@@ -70,7 +76,7 @@ namespace PurpleBricksDemo.Web.Controllers
 
         public ActionResult CreateUser()
         {
-            return PartialView(new CreateUserViewModel());
+            return View(new CreateUserViewModel());
         }
 
         public RedirectToRouteResult LogOut()

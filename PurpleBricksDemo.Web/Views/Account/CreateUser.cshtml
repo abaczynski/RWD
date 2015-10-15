@@ -1,6 +1,14 @@
 ﻿@model PurpleBricksDemo.Web.Models.Account.CreateUserViewModel
 
-@using (Html.BeginForm("CreateUser", "Account", FormMethod.Post, new { id = "validate" }))
+@{
+    ViewBag.Title = "Create USer";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="col-md-2"></div>
+    <div class="col-md-5">
+        <h2>Create User</h2>
+            
+        @using (Html.BeginForm("CreateUser", "Account", FormMethod.Post, new { id = "validate" }))
                     {
                         <fieldset>
                             <div class="form-group">
@@ -17,3 +25,4 @@
                             <button class="btn btn-lg btn btn-block">Register</button>
                         </fieldset>
                     }
+    </div>
