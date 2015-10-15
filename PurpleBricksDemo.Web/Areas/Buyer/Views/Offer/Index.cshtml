@@ -1,0 +1,29 @@
+﻿@model IList<Core.Model.Offers.OfferViewModel>
+
+@{
+    ViewBag.Title = "Offers";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Your Offers</h2>
+<table class="table">
+    <tr>
+        <th>Status</th>
+        <th>Property name</th>
+        <th>Price</th>
+        <th>Description</th>
+        <th>Contact person</th>
+    </tr>
+    @foreach (var offer in Model)
+    {
+        <tr>
+            <td>@offer.Status</td>
+
+            <td>@offer.Property.Name</td>
+            <td>@offer.OfferedPrice.ToString("0.00")</td>
+            <td>@offer.Property.Description</td>
+            <td>@offer.Property.Owner.ContactDetails.Forename</td>
+
+        </tr>
+    }
+</table>

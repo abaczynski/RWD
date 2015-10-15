@@ -1,0 +1,19 @@
+﻿@model PurpleBricksDemo.Web.Models.Account.CreateUserViewModel
+
+@using (Html.BeginForm("CreateUser", "Account", FormMethod.Post, new { id = "validate" }))
+                    {
+                        <fieldset>
+                            <div class="form-group">
+                                @Html.TextBoxFor(z => z.Username, new { @class="form-control", @placeholder="Username", @required="required" })
+                            </div>
+                            <div class="form-group">
+                                @Html.PasswordFor(z => z.Password, new { @class="form-control", @placeholder="Password", @required="required" })
+                                @Html.ValidationSummary()
+                            </div>
+                            User Type<br/>
+                            Buyer: @Html.RadioButtonFor(z => z.UserRole, "Buyer") <br/>
+                            Seller: @Html.RadioButtonFor(z => z.UserRole, "Seller")
+                            <br>
+                            <button class="btn btn-lg btn btn-block">Register</button>
+                        </fieldset>
+                    }

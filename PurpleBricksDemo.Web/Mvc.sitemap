@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<mvcSiteMap xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xmlns="http://mvcsitemap.codeplex.com/schemas/MvcSiteMap-File-4.0"
+            xsi:schemaLocation="http://mvcsitemap.codeplex.com/schemas/MvcSiteMap-File-4.0 MvcSiteMapSchema.xsd">
+
+  <mvcSiteMapNode title="Home" controller="Home" action="Index">
+    
+  <mvcSiteMapNode title="Property List" controller="Default" action="Index" area="Buyer">
+    <mvcSiteMapNode title="Your Offers" controller="Offer" action="Index" area="Buyer"/>
+    </mvcSiteMapNode>
+  <mvcSiteMapNode title="Your Properties" controller="Default" action="Index" area="Seller"/>
+  </mvcSiteMapNode>
+
+</mvcSiteMap>

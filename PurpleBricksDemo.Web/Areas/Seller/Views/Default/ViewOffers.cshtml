@@ -1,0 +1,37 @@
+﻿@model IList<Core.Model.Offers.OfferViewModel>
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h2>Your Offers</h2>
+
+    <table class="table">
+    <tr>
+        <th>Status</th>
+        <th>Property Name</th>
+        <th>Price</th>
+        <th>Offered by:</th>
+        <th>Option</th>
+    </tr>
+@foreach (var offer in Model)
+{
+    <div class="row">
+    <div class="col-md-12">
+
+    
+    <tr>
+        <td>@offer.Status</td>
+         <td>@offer.Property.Name</td>
+         <td>@offer.OfferedPrice.ToString("0.00")</td>
+         <td>@offer.OwnerName</td>
+        <td>
+            <a href="@Url.Action("AcceptOffer", new { offerId = offer.Id })" class="btn btn-success btn-xs @(offer.Status == Core.Model.Offers.EStatus.Approved ? "hide" : "show")">Accept Offer</a>
+            <a href="@Url.Action("RejectOffer", new { offerId = offer.Id })" class="btn btn-danger btn-xs @(offer.Status == Core.Model.Offers.EStatus.Rejected ? "hide" : "show")">Reject Offer</a>
+        </td>
+
+    </tr>
+        
+        </div>
+        </div>
+}
+    </table>

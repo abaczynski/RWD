@@ -1,0 +1,33 @@
+﻿@model IList<Core.Model.Property.PropertyViewModel>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Your Properties</h2>
+Properties list
+<div class="row">
+    <div class="col-md-8">
+        <table class="table">
+            <tr>
+                <th>Property Name</th>
+                <th>Price</th>
+                <th>Description</th>
+                <th>Options</th>
+            </tr>
+            @foreach (var property in Model)
+            {
+                <tr>
+                    <td>@property.Name</td>
+                    <td>@property.Price.ToString("0.00")</td>
+                    <td>@property.Description</td>
+                    <td><a href="@Url.Action("ViewOffers", new { propertyId = property.Id })" class="btn btn-default">View Offers</a></td>
+               </tr>
+            }
+        </table>
+    </div>
+    <div class="col-md-4">
+        @Html.Action("AddProperty")
+    </div>
+
+</div>

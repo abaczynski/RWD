@@ -1,0 +1,29 @@
+﻿@model PurpleBricksDemo.Web.Areas.Buyer.Models.BuyerPropertyOfferViewModel
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Properties List</h2>
+
+<table class="table">
+    <tr>
+        <th>Contact Person</th>
+        <th>Property name</th>
+        <th>Description</th>
+        <th>Price</th>
+        <th>Option</th>
+    </tr>
+@foreach (var property in Model.Properties)
+{
+    <tr>
+    <td>@property.OwnerName</td>
+    
+         <td>@property.Name</td>
+         <td>@property.Description</td>
+        <td>@property.Price.ToString("0.00")</td>
+        <td><a class="btn btn-default" href="@Url.Action("MakeOffer", new {propertyId = property.Id})">Make offer</a></td>
+    
+        </tr>
+}
+    </table>

@@ -1,0 +1,11 @@
+c:\users\user\documents\visual studio 2012\Projects\PurpleBricksDemo\Infrastructure.Container\bin\Debug\Infrastructure.Container.dll
+c:\users\user\documents\visual studio 2012\Projects\PurpleBricksDemo\Infrastructure.Container\bin\Debug\Infrastructure.Container.pdb
+c:\users\user\documents\visual studio 2012\Projects\PurpleBricksDemo\Infrastructure.Container\bin\Debug\Castle.Core.dll
+c:\users\user\documents\visual studio 2012\Projects\PurpleBricksDemo\Infrastructure.Container\bin\Debug\Castle.Windsor.dll
+c:\users\user\documents\visual studio 2012\Projects\PurpleBricksDemo\Infrastructure.Container\bin\Debug\Infrastructure.Domain.dll
+c:\users\user\documents\visual studio 2012\Projects\PurpleBricksDemo\Infrastructure.Container\bin\Debug\Infrastructure.Domain.pdb
+c:\users\user\documents\visual studio 2012\Projects\PurpleBricksDemo\Infrastructure.Container\bin\Debug\Castle.Core.xml
+c:\users\user\documents\visual studio 2012\Projects\PurpleBricksDemo\Infrastructure.Container\bin\Debug\Castle.Windsor.xml
+c:\users\user\documents\visual studio 2012\Projects\PurpleBricksDemo\Infrastructure.Container\obj\Debug\Infrastructure.Container.csprojResolveAssemblyReference.cache
+c:\users\user\documents\visual studio 2012\Projects\PurpleBricksDemo\Infrastructure.Container\obj\Debug\Infrastructure.Container.dll
+c:\users\user\documents\visual studio 2012\Projects\PurpleBricksDemo\Infrastructure.Container\obj\Debug\Infrastructure.Container.pdb

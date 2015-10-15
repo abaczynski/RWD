@@ -1,0 +1,7 @@
+c:\users\user\documents\visual studio 2012\Projects\PurpleBricksDemo\Core.Model\obj\Debug\Core.Model.csprojResolveAssemblyReference.cache
+c:\users\user\documents\visual studio 2012\Projects\PurpleBricksDemo\Core.Model\bin\Debug\Core.Model.dll
+c:\users\user\documents\visual studio 2012\Projects\PurpleBricksDemo\Core.Model\bin\Debug\Core.Model.pdb
+c:\users\user\documents\visual studio 2012\Projects\PurpleBricksDemo\Core.Model\bin\Debug\Infrastructure.Domain.dll
+c:\users\user\documents\visual studio 2012\Projects\PurpleBricksDemo\Core.Model\bin\Debug\Infrastructure.Domain.pdb
+c:\users\user\documents\visual studio 2012\Projects\PurpleBricksDemo\Core.Model\obj\Debug\Core.Model.dll
+c:\users\user\documents\visual studio 2012\Projects\PurpleBricksDemo\Core.Model\obj\Debug\Core.Model.pdb

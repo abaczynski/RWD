@@ -1,0 +1,37 @@
+﻿@using MvcSiteMapProvider
+
+<nav class="navbar-side" role="navigation">
+    <div class="navbar-collapse sidebar-collapse collapse">
+        <ul id="side" class="nav navbar-nav side-nav ">
+            <li>
+            @foreach (var item in Html.MvcSiteMap().SiteMap.RootNode.ChildNodes.Where(x => User.IsInRole(x.Area)))
+            {
+                string actionName = item.Action;
+                string areaName = item.Area;
+                string controllerName = item.Controller;
+                string title = item.Title;
+                string id = string.Format("{0}_{1}_{2}", areaName, controllerName, actionName);
+                
+                    <li>
+   
+                            <a href="@Url.Action(actionName, controllerName, new {area = areaName})">
+                                <i class="fa fa-dashboard"></i> @title
+                            </a>
+                    </li>
+                if (item.HasChildNodes)
+                {
+                    foreach (var childItem in item.ChildNodes)
+                    {
+                           <li>
+   
+                                <a href="@Url.Action(childItem.Action, childItem.Controller, new {area = childItem.Area})">
+                                    <i class="fa fa-dashboard"></i> @childItem.Title
+                                </a>
+                        </li> 
+                    }
+                }
+              }
+            </li>
+            </ul>
+        </div>
+    </nav>

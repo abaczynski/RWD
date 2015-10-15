@@ -1,0 +1,16 @@
+c:\users\user\documents\visual studio 2012\Projects\PurpleBricksDemo\Infrastructure.DataAccess\obj\Debug\Infrastructure.DataAccess.csprojResolveAssemblyReference.cache
+c:\users\user\documents\visual studio 2012\Projects\PurpleBricksDemo\Infrastructure.DataAccess\bin\Debug\Infrastructure.DataAccess.dll
+c:\users\user\documents\visual studio 2012\Projects\PurpleBricksDemo\Infrastructure.DataAccess\bin\Debug\Infrastructure.DataAccess.pdb
+c:\users\user\documents\visual studio 2012\Projects\PurpleBricksDemo\Infrastructure.DataAccess\bin\Debug\Core.Model.dll
+c:\users\user\documents\visual studio 2012\Projects\PurpleBricksDemo\Infrastructure.DataAccess\bin\Debug\FluentNHibernate.dll
+c:\users\user\documents\visual studio 2012\Projects\PurpleBricksDemo\Infrastructure.DataAccess\bin\Debug\Iesi.Collections.dll
+c:\users\user\documents\visual studio 2012\Projects\PurpleBricksDemo\Infrastructure.DataAccess\bin\Debug\Infrastructure.Domain.dll
+c:\users\user\documents\visual studio 2012\Projects\PurpleBricksDemo\Infrastructure.DataAccess\bin\Debug\NHibernate.dll
+c:\users\user\documents\visual studio 2012\Projects\PurpleBricksDemo\Infrastructure.DataAccess\bin\Debug\Core.Model.pdb
+c:\users\user\documents\visual studio 2012\Projects\PurpleBricksDemo\Infrastructure.DataAccess\bin\Debug\Infrastructure.Domain.pdb
+c:\users\user\documents\visual studio 2012\Projects\PurpleBricksDemo\Infrastructure.DataAccess\bin\Debug\FluentNHibernate.pdb
+c:\users\user\documents\visual studio 2012\Projects\PurpleBricksDemo\Infrastructure.DataAccess\bin\Debug\FluentNHibernate.xml
+c:\users\user\documents\visual studio 2012\Projects\PurpleBricksDemo\Infrastructure.DataAccess\bin\Debug\Iesi.Collections.xml
+c:\users\user\documents\visual studio 2012\Projects\PurpleBricksDemo\Infrastructure.DataAccess\bin\Debug\NHibernate.xml
+c:\users\user\documents\visual studio 2012\Projects\PurpleBricksDemo\Infrastructure.DataAccess\obj\Debug\Infrastructure.DataAccess.dll
+c:\users\user\documents\visual studio 2012\Projects\PurpleBricksDemo\Infrastructure.DataAccess\obj\Debug\Infrastructure.DataAccess.pdb
